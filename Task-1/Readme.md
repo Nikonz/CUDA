@@ -1,17 +1,14 @@
 # Решение СЛАУ методом Якоби с помощью CUDA 8.0
 
 ### Сборка:
-make
+`make`
 
 ### Запуск:
-./jacobi -f <input_file> -i <n_iterations> -b <block_size>
+`./jacobi -f <input_file> -i <n_iterations> -b <block_size>`
 
 ### Генерация тестов:
-python gen_diag_dominant_matrix <size> <output_file>
+`python gen_diag_dominant_matrix <size> <output_file>`
 
 ### Формат входного файла:
-N
-a[1, 1], ..., a[1, N] b[1]
-..................... ....
-a[N, 1], ..., a[N, N] b[N]
+В первой строке размер N. Далее матрица N * (N + 1), где первые N столбцов - это матрица коэффициентов A, а последний - вектор-столбец свободны членов b. 
 
