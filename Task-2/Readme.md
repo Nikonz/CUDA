@@ -6,4 +6,4 @@
 `make`
 
 ### Запуск:
-`./jacobi -i <input_bmp> -o <output_bmp> -r <window_radius> -b <block_size>`
+`./median -i <input_bmp> -o <output_bmp> -r <window_radius> -b <block_size>`
